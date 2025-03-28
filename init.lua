@@ -270,7 +270,7 @@ require('lazy').setup({
   -- Then, because we use the `opts` key (recommended), the configuration runs
   -- after the plugin has been loaded as `require(MODULE).setup(opts)`.
 
-  { -- Useful plugin to show you pending keybinds.
+  {                     -- Useful plugin to show you pending keybinds.
     'folke/which-key.nvim',
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     opts = {
@@ -316,7 +316,7 @@ require('lazy').setup({
 
       -- Document existing key chains
       spec = {
-        { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
+        { '<leader>c', group = '[C]ode',     mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },
         { '<leader>s', group = '[S]earch' },
@@ -356,7 +356,7 @@ require('lazy').setup({
       { 'nvim-telescope/telescope-ui-select.nvim' },
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
-      { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
+      { 'nvim-tree/nvim-web-devicons',            enabled = vim.g.have_nerd_font },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -470,7 +470,7 @@ require('lazy').setup({
       },
 
       -- Useful status updates for LSP.
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
@@ -654,16 +654,16 @@ require('lazy').setup({
 
       require('mason-lspconfig').setup {
         ensure_installed = {
-          'omnisharp', -- C#
-          'cssls', -- CSS
-          'emmet_ls', -- Emmet
-          'eslint', -- ESLint
-          'gopls', -- Go
-          'html', -- HTML
+          'omnisharp',     -- C#
+          'cssls',         -- CSS
+          'emmet_ls',      -- Emmet
+          'eslint',        -- ESLint
+          'gopls',         -- Go
+          'html',          -- HTML
           'powershell_es', -- PowerShell
           'rust_analyzer', -- Rust
-          'tailwindcss', -- Tailwind CSS
-          'ts_ls', -- TypeScript/JavaScript
+          'tailwindcss',   -- Tailwind CSS
+          'ts_ls',         -- TypeScript/JavaScript
         },
         automatic_installation = true,
         handlers = {
